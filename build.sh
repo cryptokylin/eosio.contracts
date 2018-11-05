@@ -11,3 +11,11 @@ pushd build &> /dev/null
 cmake ../
 make -j${CORES}
 popd &> /dev/null
+
+
+
+## replace abi files
+
+for c in bios msig system token; do \
+    cp ./eosio.${c}/abi/eosio.${c}.abi      ./build/eosio.${c}/ ;done
+
