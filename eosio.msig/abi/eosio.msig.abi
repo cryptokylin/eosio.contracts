@@ -338,7 +338,7 @@
             "name": "invals",
             "type": "invalidation",
             "index_type": "i64",
-            "key_names": [account],
+            "key_names": ["account"],
             "key_types": ["uint64"]
         },
         {
